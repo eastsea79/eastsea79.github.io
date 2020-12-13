@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+* {
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #d4eeff;
+}
+.header {
+  padding: 30px;
+  text-align: center;
+  background: white;
+}
+.header h1 {
+  font-size: 50px;
+}
+.topnav {
+  overflow: hidden; /*visible, scroll, auto, hidden*/
+  background-color: #aab0ff;
+}
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.topnav a:hover {
+  background-color: #e2e4ff;
+  color: black;
+}
+.leftcolumn {
+  float: left;
+  width: 75%;
+  font-family: '나눔스퀘어_ac'
+}
+.rightcolumn {
+  float:left;
+  width: 25%;
+  background-color: #d4eeff;
+  padding-left: 20px;
+  font-family: '나눔스퀘어_ac'
+}
+.fakeimg {
+  background-color: #aaa;
+  width:100%;
+  padding: 20px;
+}
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+/* clear floats after the columns: 컬럼 다음에 float 해제*/
+.row:after {
+  content: ""; /*.row 다음에 content ""안에 있는 내용을 입력하시오.*/
+  display: table;
+  clear: both;
+}
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #aab0ff;
+  margin-top: 20px;
+  font-size: 9px;
+  font-family: '나눔스퀘어_ac'
+
+
+}
+.bold {
+  font-family: '나눔스퀘어_ac Bold';
+}
+.white {
+  color: white;
+}
+
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
+}
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+
+      </style>
+  </head>
+  <body>
+<div class='header'>
+  <h1>  <a href="./index.html">My Website</a></h1>
+  <p>show my artwork</p>
+</div>
+
+<div class="topnav">
+  <a href="./video.html">Video</a>
+  <a href="./cardnews.html">CardNews</a>
+  <a href="./programming.html">Programming</a>
+  <a href="./index.html" style='float:right'>Me</a>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2><span class='bold'>What I'm working on</span></h2>
+<h5>콘텐츠디자인 기말 프로젝트</h5>
+<div><img src='./img/11.png' width='350'><img src='./img/12.png' width='350'><img src='./img/13.png' width='350'></div>
+<p>디즈니 디지털 브로셔 작업 중</p>
+
+</div>
+<div class="card">
+  <h2><span class='bold'>What I'm working on</span></h2>
+  <h5>영상디자인 기말 프로젝트</h5>
+  <div><img src='./img/14.png' width='350'><img src='./img/15.png' width='350'><img src='./img/16.png' width='350'></div>
+  <p>화해 앱 홍보 영상 작업 중</p>
+
+  </div>
+</div>
+
+<div class="rightcolumn">
+  <div class="card">
+    <h2>About me</h2>
+    <img src='./img/me.png' width='130'>
+    <p>Digital Media Design<br></p>
+    <p>22061032 김지원</p>
+  </div>
+  <div class="card">
+    <h3>popular post</h3>
+    <div><p><a href="./video.html">- Video</a></p></div>
+    <div><p><a href="./cardnews.html">- CardNews</a></p></div>
+    <div><p><a href="./programming.html">- Programming</a></p></div>
+    </div>
+<div class="card">
+  <h3>follow me</h3>
+<a href='#'><img src='./img/fff.png' width='40'></a>
+<a href='#'><img src='./img/iii.png' width='40'></a>
+<a href='#'><img src='./img/kkk.png' width='40'></a>
+</div>
+  </div>
+</div><!--class=row는 column 다음에 float 해제시키는 css가 있으므로 footer 전에 float 해제를 css에 넣어놓은 것임-->
+
+<div class="footer">
+  <h2><span class='white'>Copyright © 22061032 김지원</span></h2>
+</div>
+
+  </body>
+</html>

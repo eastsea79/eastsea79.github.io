@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+* {
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #d4eeff;
+
+}
+.header {
+  padding: 30px;
+  text-align: center;
+  background: white;
+}
+.header h1 {
+  font-size: 50px;
+}
+.topnav {
+  overflow: hidden; /*visible, scroll, auto, hidden*/
+  background-color: #aab0ff;
+}
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.topnav a:hover {
+  background-color: #e2e4ff;
+  color: black;
+}
+
+.fakeimg {
+  background-color: #aaa;
+  width:100%;
+  padding: 20px;
+}
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+  font-family: '나눔스퀘어_ac'
+}
+/* clear floats after the columns: 컬럼 다음에 float 해제*/
+.row:after {
+  content: ""; /*.row 다음에 content ""안에 있는 내용을 입력하시오.*/
+  display: table;
+  clear: both;
+}
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #aab0ff;
+  margin-top: 20px;
+  font-size: 9px;
+  font-family: '나눔스퀘어_ac'
+
+
+}
+.bold {
+  font-family: '나눔스퀘어_ac Bold';
+}
+.white {
+  color: white;
+}
+
+
+
+
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
+}
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+
+      </style>
+  </head>
+  <body>
+<div class='header'>
+  <h1>  <a href="./index.html">My Website</a></h1>
+  <p>show my artwork</p>
+</div>
+
+<div class="topnav">
+  <a href="./video.html">Video</a>
+  <a href="./cardnews.html">CardNews</a>
+  <a href="./programming.html">Programming</a>
+  <a href="./index.html" style='float:right'>Me</a>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2><span class='bold'>Andy Warhol Card News</span></h2>
+<h5>콘텐츠디자인 중간 프로젝트</h5>
+<div> <img src='./img/1.gif' width='240'>
+  <img src='./img/2.gif' width='240'>
+  <img src='./img/3.gif' width='240'>
+  <img src='./img/4.gif' width='240'>
+  <img src='./img/5.gif' width='240'><br>
+  <img src='./img/6.gif' width='240'>
+  <img src='./img/7.gif' width='240'>
+  <img src='./img/8.gif' width='240'>
+  <img src='./img/9.gif' width='240'>
+  <img src='./img/10.gif' width='240'>
+</div>
+<p>앤디워홀의 작업물을 소개하는 내용
+</p>
+<p>카메라로 일상을 촬영하는 콘셉트의 카드뉴스</p>
+</div>
+
+
+  </div>
+</div><!--class=row는 column 다음에 float 해제시키는 css가 있으므로 footer 전에 float 해제를 css에 넣어놓은 것임-->
+
+<div class="footer">
+  <h2><span class='white'>Copyright © 22061032 김지원</span></h2>
+</div>
+
+  </body>
+</html>
