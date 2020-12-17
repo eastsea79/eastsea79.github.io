@@ -1,0 +1,194 @@
+<!DOCTYPE html><!--22061032 김지원-->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+* {
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: black;
+  color: white;
+}
+#logo {
+  float: left;
+  margin: 37px 0 0 20px;
+  /*border: solid 1px red;*/
+}
+#menus {
+  float: left;
+  /*border: solid 1px red;*/
+}
+#top_menu {
+  text-align: right;
+  margin-top: 20px;
+  /*border: solid 1px red;*/
+}
+#main_menu {
+margin-top: 10px;
+font-family:'a영고딕B';
+font-size: 17px;
+color: white;
+  /*border: solid 1px red;*/
+  width: 100%;
+  display: block;
+
+}
+#main_menu li {
+  display: inline;
+  margin-left: 60px;
+  vertical-align: middle;
+}
+
+#main_menu a:hover {
+  color: red;
+}
+a:hover {
+  color: red;
+}
+.header {
+  padding: 30px;
+
+  background: black;
+}
+.header h1 {
+  font-size: 50px;
+}
+.rightcolumn {
+  float: left;
+  width: 20%;
+  background-color: black;
+  padding-left: 40px;
+  font-family: '나눔스퀘어_ac';
+}
+.leftcolumn {
+  float: right;
+  width: 80%;
+  font-family: '나눔스퀘어_ac';
+  padding-left: 170px;
+
+}
+
+.fakeimg {
+  background-color: #aaa;
+  width:100%;
+  padding: 20px;
+}
+.card {
+  background-color: black;
+  padding: 20px;
+  margin-top: 20px;
+}
+/* clear floats after the columns: 컬럼 다음에 float 해제*/
+.row:after {
+  content: ""; /*.row 다음에 content ""안에 있는 내용을 입력하시오.*/
+  display: table;
+  clear: both;
+}
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #262626;
+  margin-top: 20px;
+  font-size: 9px;
+  font-family: '나눔스퀘어_ac'
+
+
+}
+p {
+  line-height: 170%;
+
+}
+
+
+.bold {
+  font-family: '나눔스퀘어_ac Bold';
+}
+.white {
+  color: white;
+}
+.red {
+  color: red;
+}
+
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
+}
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+.right {
+  float: right;
+
+}
+      </style>
+  </head>
+  <body>
+<div class='header'>
+
+  <span id='main_menu'>    <li><a href="./index.html"><img src='./img/logo.png' width='170'></a></li>
+    <li><a href='./lelabo.html'>VIDEO</a></li>
+      <li><a href='./tarot.html'>DESIGN</a></li>
+      <li><a href='./unity.html'>PROGRAMMING</a></li>
+        <li><span class='right'><a href="./profile.html"><img src='./img/me.png' width='55'></a></li></span></span>
+
+
+</div>
+
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2><span class='bold'>Card News</span></h2>
+<h5>기초드로잉 1학기 기말 프로젝트</h5>
+<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <img src='./img/cardnews.gif' width='25%'>
+
+</div><br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  앤디워홀의 작업물을 지루하지 않게 소개하고자 함 <br>
+
+</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  카메라로 일상을 촬영하는 콘셉트의 카드뉴스</p><br><br><br><br>
+
+</div>
+
+</div>
+
+<div class="rightcolumn">
+
+  <div class="card">
+    <h2>DESIGN</h2>
+    <div><p> &nbsp; </p></div>
+    <div><p><a href="./tarot.html">Tarot Card</a></p></div>
+    <div><p><a href="./cardnews.html"><span class='red'>Card News</span></a></p></div>
+    <div><p><a href="./brochure.html">Digital Brochure</a></p></div>
+
+    </div>
+
+  </div>
+</div><!--class=row는 column 다음에 float 해제시키는 css가 있으므로 footer 전에 float 해제를 css에 넣어놓은 것임-->
+
+<div class="footer">
+  <h2><span class='white'>Copyright © 22061032 김지원</span></h2>
+</div>
+
+  </body>
+</html>
